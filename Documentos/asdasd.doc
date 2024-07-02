@@ -1,0 +1,12 @@
+"Table"	"Create Table"
+"usuario"	"CREATE TABLE `usuario` (
+  `cargo` int DEFAULT NULL,
+  `id_user` bigint NOT NULL AUTO_INCREMENT,
+  `apellidos` varchar(255) DEFAULT NULL,
+  `clave` varchar(255) DEFAULT NULL,
+  `nombres` varchar(255) DEFAULT NULL,
+  `usuario` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE KEY `UKhtjs03p12lnsr37jp3ixgcwat` (`cargo`),
+  CONSTRAINT `FKf4sk4v7qt31cf8vjd8b3hfid8` FOREIGN KEY (`cargo`) REFERENCES `cargo` (`id_cargo`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"
